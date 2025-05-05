@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DA Travels</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="logowobg.png" alt="DA TRAVELS LOGO" id="logoimg" />
+
+        <h1 id="h1tag">DA Travels</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <img src="bluecar.jpeg" alt="" id="bluecar" />
+      <div class="main1">
+        <div class="sub11">
+          ✈️ "Discover the world your way – with DA Travels, where every journey
+          is crafted with care and every destination feels like home."
+        </div>
+      </div>
+
+      <div class="typing-container" id="typing"></div>
+
+      <script>
+        const text = "A journey is best measured in friends, rather than miles";
+        const typingElement = document.getElementById("typing");
+
+        let i = 0;
+
+        function type() {
+          if (i < text.length) {
+            typingElement.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+          } else {
+            setTimeout(() => {
+              typingElement.textContent = "";
+              i = 0;
+              type();
+            }, 2000);
+          }
+        }
+
+        type();
+      </script>
+    </section>
+
+    <section id="services">
+      <img src="bluecar.jpeg" alt="" id="bluecar2" />
+
+      <div class="about2">
+        <h2 id="h2tag">Our Services</h2>
+        <div class="service-items">
+          <div class="service-box1">
+            <h3>Local Trips</h3>
+            <p>Affordable rides across the city anytime you need.</p>
+          </div>
+          <div class="service-box2">
+            <h3>Outstation Travel</h3>
+            <p>Comfortable outstation trips with experienced drivers.</p>
+          </div>
+          <div class="service-box3">
+            <h3>Tour Packages</h3>
+            <p>Plan your dream vacation with our customizable packages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="aboutdiv1">
+        <div class="subdiv11">
+          <h2
+            style="font-family: fantasy; color: rgba(219, 143, 214, 0.678)"
+            id="abouth2"
+          >
+            About Us
+          </h2>
+          <p id="aboutpara">
+            Welcome to DA Travels - where your journey begins with trust,
+            excitement, and a touch of personalization.<br />
+
+            Founded with a passion for exploring the world and sharing those
+            experiences, DA Travels is your go-to travel partner for
+            unforgettable adventures.
+          </p>
+          <aside>
+            <details open>
+              <summary>Why Choose Us?</summary>
+              <ul id="aboutul">
+                <li id="aboutli1">100% Customer Satisfaction</li>
+                <li id="aboutli2">
+                  Reliable, Transparent & Affordable Services
+                </li>
+              </ul>
+            </details>
+          </aside>
+        </div>
+      </div>
+      <div class="aboutdiv2">
+        <img src="stickyNote3.avif" alt="" id="subdiv21" />
+
+        <div class="typing-container1" id="typing1">
+          🧭 Our Mission<br />
+          At DA Travels, we aim to create travel experiences as unique as you
+          are. Our goal is to deliver journeys filled with joy, discovery, and
+          comfort — making every trip memorable, meaningful, and hassle-free.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📞 Contact Us</h2>
+      <p>
+        We’re here to help you plan the perfect trip. Whether you have
+        questions, need custom itineraries, or want to make a booking — we’re
+        just a message away!
+      </p>
+
+      <div class="contact-info">
+        <p>
+          <strong>📍 Address:</strong><br />DA Travels, Pillaiyar Koil Street,
+          Shenoy Nagar, Chennai, Tamil Nadu, India
+        </p>
+
+        <p>
+          <strong>📞 Phone:</strong><br /><a href="tel:+919876543210"
+            >+91 9884410483</a
+          >
+        </p>
+
+        <p>
+          <strong>📧 Email:</strong><br /><a
+            href="mailto:datravels1994@mail.com"
+            >datravels1994@mail.com</a
+          >
+        </p>
+
+        <p>
+          <strong>🕒 Working Hours:</strong><br />Monday to Saturday – 9:00 AM
+          to 7:00 PM<br />(Sundays Closed)
+        </p>
+        <p>
+          <strong>For booking, call this number:</strong>
+          <a href="tel:+919884410483" style="font-weight: bold; color: #0066cc">
+            +91 98765 43210
+          </a>
+        </p>
+      </div>
+
+      <footer
+        style="text-align: center; padding: 10px; background-color: #f8f8f8"
+      >
+        <p>©DA Travels. All rights reserved.</p>
+      </footer>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

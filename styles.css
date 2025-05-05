@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  box-shadow: 0 2px 10px rgba(182, 133, 133, 0.5);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eae6e6;
+}
+
+nav.scrolled .logo {
+  color: rgb(251, 255, 7);
+}
+
+#logoimg {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border-radius: 50%;
+  width: 8%;
+  height: 80%;
+  transition: all 0.5s ease-in-out;
+  animation: zoomInOut 3s ease-in-out infinite;
+}
+#logoimg:hover {
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.25);
+}
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.21);
+  }
+}
+
+#h1tag {
+  position: absolute;
+  font-size: 50px;
+  color: rgba(26, 11, 11, 0.664);
+  left: 18%;
+  top: 3%;
+  font-family: fantasy;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgba(255, 0, 0, 0.322);
+  transform: scale(1.1);
+}
+
+section {
+  padding: 100px 50px;
+  height: 100vh;
+}
+
+#home {
+  background-size: cover;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/379/787/small_2x/electric-car-driving-on-the-road-with-green-nature-and-blue-sky-motion-blur-background-generative-ai-photo.jpeg);
+}
+
+#about {
+}
+#contact {
+  background-color: rgba(168, 247, 244, 0.783);
+}
+
+.sub11 {
+  width: 23%;
+  height: 250px;
+  text-align: center;
+  font-size: 25px;
+  color: whitesmoke;
+  box-shadow: 5px 5px 10px black;
+  position: relative;
+  position: absolute;
+  top: 180px;
+  left: 2%;
+  font-family: fantasy;
+  border-radius: 5%;
+}
+.sub12 {
+  width: 90%;
+  height: 50px;
+  font-size: 25px;
+  color: silver;
+  position: relative;
+  position: absolute;
+  top: 500px;
+  left: 9%;
+  font-family: fantasy;
+}
+
+#h1 {
+  color: black;
+  position: absolute;
+  top: 100px;
+  left: 2%;
+}
+
+.services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-box1 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 700px;
+  left: 8%;
+}
+.service-box2 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 850px;
+  left: 27%;
+}
+.service-box3 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 1000px;
+  left: 47%;
+}
+#bluecar {
+  width: 1150px;
+  height: 450px;
+  position: absolute;
+  top: 93px;
+  left: 2%;
+  filter: opacity(30%);
+}
+
+#home {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typing-container {
+  font-size: 28px;
+  color: silver;
+  border-right: 2px solid #555;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 500px;
+  left: 6%;
+  font-family: fantasy;
+}
+.typing-container1 {
+  transform: rotate(-8deg);
+
+  font-size: 20px;
+  color: #0077b6;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+
+  position: absolute;
+  top: 170px;
+  left: 30%;
+  font-family: cursive;
+  width: 50%;
+  height: 50%;
+}
+
+#bluecar2 {
+  width: 1300px;
+  height: 590px;
+  position: absolute;
+  top: 593px;
+  left: 0%;
+  filter: opacity(40%);
+}
+#h2tag {
+  position: absolute;
+  top: 720px;
+  left: 50%;
+  font-size: 90px;
+  color: rgba(8, 8, 102, 0.607);
+  font-family: fantasy;
+}
+.aboutdiv1 {
+  position: absolute;
+
+  height: 102%;
+  width: 50%;
+  left: 0%;
+  top: 1188px;
+}
+.aboutdiv2 {
+  position: absolute;
+  left: 50%;
+  top: 1188px;
+  background-color: aliceblue;
+  height: 102%;
+  width: 50%;
+}
+#subdiv21 {
+  height: 100%;
+  width: 100%;
+}
+#aboutpara {
+  box-shadow: 5px 5px 10px #0077b6;
+  border-radius: 5%;
+  position: absolute;
+  top: 190px;
+  height: 22%;
+  width: 90%;
+  left: 5%;
+  text-align: left;
+}
+#abouth2 {
+  position: absolute;
+  top: 65px;
+  left: 2%;
+  font-size: 80px;
+}
+aside {
+  max-width: 400px;
+  background-color: #ffffff;
+  border-left: 5px solid #0077b6;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: absolute;
+  top: 350px;
+  left: 5%;
+}
+
+details {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0077b6;
+  cursor: pointer;
+  outline: none;
+}
+
+#aboutul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#aboutli1 {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+#aboutli1::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077b6;
+  font-weight: bold;
+}
+#aboutli2 {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+#aboutli2::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077b6;
+  font-weight: bold;
+}
+#contact {
+  max-width: 700px;
+  margin: 150px auto;
+  margin-bottom: 0;
+  height: 500px;
+  padding: 20px 30px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  scroll-margin-top: 80px;
+}
+#contact h2 {
+  font-size: 2rem;
+  color: #0077b6;
+
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+}
+
+.contact-info a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+#contact p:last-child {
+  margin-bottom: 0;
+}
